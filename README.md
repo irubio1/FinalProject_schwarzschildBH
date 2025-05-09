@@ -25,22 +25,22 @@ Please also verify that you have a working python and fortran enviroment
 
 Repository Structure:
 initial_values.txt           
-# Automatically written initial parameters
+Automatically written initial parameters
 
 plot_trajectory.py          
-# Reads simulation output and visualizes the orbit
+Reads simulation output and visualizes the orbit
 
 initial__values.py          
-# User input and orbit classification logic
+User input and orbit classification logic
 
 SBH_functions.py            
-# Physics helper functions (e.g., unit conversion)
+Physics helper functions (e.g., unit conversion)
 
 plot_functions.py           
-# Effective potential and orbit plotting functions
+Effective potential and orbit plotting functions
 
 trajectory.dat              
-# Output from simulation (r, phi, t, etc.)
+Output from simulation (r, phi, t, etc.)
 
 ./run                         
 #Runs every piece of code with the reposity to automatically simulate motion
