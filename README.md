@@ -18,8 +18,7 @@ This project uses the following Python libraries:
 If you don't have these installed, you can get them via pip:
 
 bash:
-pip install numpy
-pip install matplotlib
+pip install numpy matplotlib
 
 Please also verify that you have a working python and fortran enviroment
 
@@ -43,7 +42,8 @@ Once you've chosen the mass of your black hole, your choice of orbit, the distan
       This is equivalent to a stable orbit outside the innermost stable circular orbit (ISCO).
   
   2. Marginally Bound Orbit
-      Condition:
+
+     Condition:
       E = 1
       L = L_mb = 4M
   
@@ -51,8 +51,9 @@ Once you've chosen the mass of your black hole, your choice of orbit, the distan
       The particle starts from rest at infinity and barely falls into the black hole.
       This orbit separates bound from unbound trajectories.
   
-  3. Unbound (Escape) Orbit
-      Condition:
+  4. Unbound (Escape) Orbit
+
+     Condition:
       E > 1
       L > 0
   
@@ -60,15 +61,17 @@ Once you've chosen the mass of your black hole, your choice of orbit, the distan
       The particle comes in from infinity and escapes back to infinity.
       Depending on the potential barrier, it may also fall into the black hole.
   
-  4. Capturing Trajectory (Plunging)
-      Condition:
+  5. Capturing Trajectory (Plunging)
+
+     Condition:
       L too small to prevent infall, OR
       r_initial < r_unstable
   
       Description:
       Even if E < 1, the particle spirals into the black hole if its angular momentum is too low.
   
-  5. Stable Orbit
+  7. Stable Orbit
+
      Conditions:
      E = 1e-3 (minimu Energy)
      L = minimum Angular momentum
