@@ -1,0 +1,33 @@
+#!/bin/bash
+
+
+echo "Welcome! You have chosen to simulate the motion of a particle around a Schwarschild Black Hole"
+echo ""
+echo "You will be prompted to input your initival values for Distance from the Black hole r, and phi (your angle of approach) and the mass of your black hole."
+echo "The Energy E, Angular momentum L, and simulation run time are automatically set based on the mass of your black hole and your choice of orbit."
+echo ""
+echo "Once you've chosen your values, sit back and relax and the rest of the program will run until it plots your graph of motion :)"
+echo ""
+echo "┊         ┊       ┊   ┊    ┊        ┊"
+echo "┊         ┊       ┊   ┊   ˚★⋆｡˚  ⋆"
+echo "┊         ┊       ┊   ⋆"
+echo "┊         ┊       ★⋆"
+echo "┊ ◦       ┊"
+echo "★⋆        ┊ .  ˚"
+echo "           ˚★"
+echo ""
+
+#Initalize initial values 
+python initial_values.py
+
+echo "Thank you! Now sit back and the program will now automatically run with your intitial values."
+echo "Compiling RK4 programming..."
+echo "..."
+echo "┬┴┬┴┤ʕ•ᴥ├┬┴┬┴"
+echo "..."
+gfortran RK4_all.f90 -o RK4.exe
+echo "Executing RK4 programming"
+./RK4.exe
+
+
+python plot_trajectory.py
