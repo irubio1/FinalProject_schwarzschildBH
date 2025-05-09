@@ -3,7 +3,6 @@ Welcome to my repository! Are you ready to begin simulating the motion of a part
 Table of Contents
 ------------------
 1. Dependencies
-2. Repository Structure
 3. How to Run
 4. Orbit Types & Physical Conditions
 
@@ -20,8 +19,11 @@ If you don't have these installed, you can get them via pip:
 bash:
 pip install numpy matplotlib
 
-Please also verify that you have a working python and fortran enviroment
+Please also verify that you have a working python and fortran environment
 
+------------------------------------------------------------
+2. How to run
+-----------------
 How to run:
 Once your dependencies are installed and you've verified python and fortran, you're ready to run the code. To initalize the simulation please run:
 
@@ -29,9 +31,13 @@ Once your dependencies are installed and you've verified python and fortran, you
 
 You will then be prompted to input the mass of your black hole and choose the type of orbit you wish to see, those choices are documented below. 
 Your bounds for Energy E, angular momentum L, and your distance from the black hole r will be given to you afterwards. Please choose your distance
-from the black hole from within those bounds to provide numerical stability within your simulation. You will also choose your initial phi (azimuth angle)
+from the black hole within those bounds to provide numerical stability within your simulation. You will also choose your initial phi (azimuth angle)
 for your approach to the black hole.
 Once you've chosen the mass of your black hole, your choice of orbit, the distance and the angle phi, sit back and relax and the rest of the program will run smoothly!
+ 
+------------------------------------------------------------
+3. Orbit Choices explain
+-----------------
   1. Bound (Elliptical-like) Orbit
       Condition:
       0 < E < 1
