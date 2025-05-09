@@ -122,4 +122,8 @@ def orbit_choice(M_BH, orbit_choice):
         E_geom = 0.95
         L_geom = 2.0 * M_BH  # below ISCO
 
+    elif orbit_choice =="5":
+        E_geom = None
+        L_geom = None
+
     return E_geom, L_geom

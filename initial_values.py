@@ -14,7 +14,8 @@ with open(outf_name, "w") as IV_outf:
     print("2. Marginally bound (E = 1)")
     print("3. Unbound (Escape)")
     print("4. Plunge (Capturing)")
-    orbit_choice = input("Enter number (1-4): ")
+    print("5. Stable, circular orbit")
+    orbit_choice = input("Enter number (1-5): ")
     print(f"\nGiven the mass {M_BH} of your black hole, please adhere to these following bounds to maintain numerical stability for your simulated model:")
     bounds = functions.calculate_bounds(M_BH)
     # Print bounds in scientific notation
@@ -48,6 +49,9 @@ with open(outf_name, "w") as IV_outf:
             tau_geom = 999.99 # a few orbital periods
             time_step = 0.01
             E_geom, L_geom = functions.orbit_choice(M_BH, orbit_choice)
+            if orbit_choice =="5":
+                E_geom = bounds["energy_geom"][0]
+                L_geom = bounds["angular_momentum_geom"][0]
 
             return r_geom, tau_geom, L_geom, E_geom, time_step, phi
 
