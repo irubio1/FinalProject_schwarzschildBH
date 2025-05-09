@@ -23,31 +23,9 @@ pip install matplotlib
 
 Please also verify that you have a working python and fortran enviroment
 
-Repository Structure:
-initial_values.txt           
-Automatically written initial parameters
-
-plot_trajectory.py          
-Reads simulation output and visualizes the orbit
-
-initial__values.py          
-User input and orbit classification logic
-
-SBH_functions.py            
-Physics helper functions (e.g., unit conversion)
-
-plot_functions.py           
-Effective potential and orbit plotting functions
-
-trajectory.dat              
-Output from simulation (r, phi, t, etc.)
-
-./run                         
-#Runs every piece of code with the reposity to automatically simulate motion
-
 How to run:
-Once your dependencies are installed and you've verified python and fortran, you're ready to run the code. To initalize the simulation 
-please run:
+Once your dependencies are installed and you've verified python and fortran, you're ready to run the code. To initalize the simulation please run:
+
 ./run
 
 You will then be prompted to input the mass of your black hole and choose the type of orbit you wish to see, those choices are documented below. 
