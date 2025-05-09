@@ -62,7 +62,7 @@ contains
         ! Effective potential
         Veff = (1.0d0 - 2.0d0*M_BH / r) * (1.0d0 + (L**2) / (r**2))
         if (E**2 >= Veff) then
-            print *, "Warning: r at or below Schwarzschild radius: r =", r
+            !print *, "Warning: r at or below Schwarzschild radius: r =", r
             dr = sqrt(E**2 - Veff)
         else
             dr = 0.0d0
@@ -74,7 +74,7 @@ contains
         real(8), intent(in) :: r, L
         real(8) :: dphi
         if (r <= 0.0d0) then
-            print *, "Warning: r <= 0 in dphi_dtau"
+            !print *, "Warning: r <= 0 in dphi_dtau"
             dphi = 0.0d0
         else
             dphi = L / (r**2)
@@ -86,7 +86,7 @@ contains
     	real(8), intent(in) :: E, M_BH, r
     	real(8) :: dt
     	if (r <= 2.0d0 * M_BH) then
-            print *, "Warning: r at or below Schwarzschild radius: r =", r
+            !print *, "Warning: r at or below Schwarzschild radius: r =", r
             dt = 0.0d0
         else
             dt = E / (1.0d0 - 2.0d0 * M_BH / r)
